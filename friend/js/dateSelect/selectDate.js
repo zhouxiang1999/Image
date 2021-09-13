@@ -228,7 +228,7 @@ $.extend({
         info.nowMonth = (now.getMonth() + 1);
         info.startYear = info.nowYear - 60; //最小的选项 
         info.maxYear = info.nowYear ; //最大的选项
-        var dateVal = $(el).val(); //获取输入框的值
+        var dateVal = $(el).attr("data-val"); //获取输入框的值
         var tempos = [info.maxYear - info.startYear , 0];//设置初始值
         if (dateVal != undefined && dateVal != "") {
              
